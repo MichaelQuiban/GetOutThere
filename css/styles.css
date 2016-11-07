@@ -2,24 +2,34 @@ body {
 	background-color: #FFF;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #000;
-}
-
-li { 
-	float: left;
-	color:#fff;
-}
-
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
+a {
 	text-decoration: none;
+	color: #000;
 }
+
+a:hover {
+	text-decoration: none;
+	cursor:pointer;
+	color: #202020;
+}
+
+li {
+	list-style: none;
+	float: left;
+	padding: 5px 16px;	
+	margin-right: 20px;
+	font-size: 2em;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.info {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1.7em;
+	width: 900px;
+	height: 200px;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
 
