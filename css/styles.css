@@ -1,3 +1,4 @@
+/* Misc. Styling */
 body { 
 	background-color: #FFF;
 }
@@ -12,6 +13,7 @@ a:hover {
 	cursor:pointer;
 	color: #202020;
 }
+/* Misc. Styling Over */
 
 li {
 	list-style: none;
@@ -20,6 +22,7 @@ li {
 	margin-right: 20px;
 	font-size: 2em;
 	font-family: 'Pathway Gothic One', sans-serif;
+	border: 1px solid;
 }
 
 .info {
@@ -27,9 +30,17 @@ li {
 	font-size: 1.7em;
 	width: 900px;
 	height: 200px;
-	position: absolute;
-	margin-top: 40px;
-	margin-left: 20px;
+	border: 1px solid;
+	top: 2px;
 }
 
+.search {
+	margin: 0 auto;
+	width: 500px;
+	height: 250px;
+	position: relative;
+	margin-top: 300px;
+	padding: 2px;
+	border: 1px solid;
+}
 
