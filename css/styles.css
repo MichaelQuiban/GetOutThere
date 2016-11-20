@@ -10,8 +10,9 @@ body {
 	padding: 0;
 }
 
+
 body { 
-	background-color: #FFF;
+	
 }
 
 a {
@@ -31,6 +32,7 @@ li, .info, .search, .meetup-results {
 
 /* Misc. Styling Over */
 
+/* Navigation Content */
 li {
 	list-style: none;
 	float: left;
@@ -41,6 +43,7 @@ li {
 	position: relative;
 }
 
+/* Descripion below navigation bar*/
 .info {
 	font-size: 1.4em;
 	top: 15px;
@@ -52,28 +55,41 @@ li {
 	width: 750px;
 }
 
+/* Search Area */
 .search {
 	margin: 0 auto;
 	width: 200px;
 	height: 50px;
-	margin-top: 150px;
+	margin-top: 15px;
 	padding: 2px;
 	position: relative;
 }
 
+/* Meetup API information */
 .meetup-results {
 	font-size: 1.6em;
 	opacity: 0.7555;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 35px;
 }
 
+/* Meetup Divider */
 .divider-meetup {
 	border-top: 1px solid black;
 	width: 200px;
 }
 
+/* Submit Button */
+.begin {
+	opacity: 0.5;
+	background: none;
+	cursor: pointer;
+	float: right;
+}
+
 /* Override default styles */
+
+/* Search box styles/content */
 input[type ="search"] {
 	border: 0;
 	width: 230px;
@@ -84,11 +100,11 @@ input[type ="search"] {
 	outline: none;
 }
 
+/* Default Submit Override */
 input [type ="submit"] {
 	border: 0;
 	margin: 0;
-	background-color: #BDBBBB;
-	float: right;
 }
+
 /* Default style remover: finished! */
 
