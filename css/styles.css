@@ -25,8 +25,8 @@ a:hover {
 	opacity: 0.5;
 }
 
-li, .info, .search {
-	font-family: 'Pathway Gothic One', sans-serif;;
+li, .info, .search, .meetup-results {
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
 /* Misc. Styling Over */
@@ -59,6 +59,18 @@ li {
 	margin-top: 150px;
 	padding: 2px;
 	position: relative;
+}
+
+.meetup-results {
+	font-size: 1.6em;
+	opacity: 0.7555;
+	margin-top: 50px;
+	margin-left: 35px;
+}
+
+.divider-meetup {
+	border-top: 1px solid black;
+	width: 200px;
 }
 
 /* Override default styles */
