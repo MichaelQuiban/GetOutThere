@@ -22,7 +22,7 @@ a {
 a:hover {
 	text-decoration: none;
 	cursor:pointer;
-	color: #202020;
+	opacity: 0.5;
 }
 
 li, .info, .search {
