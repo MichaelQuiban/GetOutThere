@@ -1,4 +1,15 @@
+body {
+	background-color: #FFF;
+}
+
 /* Misc. Styling */
+
+/* override default sizes around elements. */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body { 
 	background-color: #FFF;
 }
@@ -13,34 +24,59 @@ a:hover {
 	cursor:pointer;
 	color: #202020;
 }
+
+li, .info, .search {
+	font-family: 'Pathway Gothic One', sans-serif;;
+}
+
 /* Misc. Styling Over */
 
 li {
 	list-style: none;
 	float: left;
-	padding: 5px 16px;	
+	padding: 4px 12px;	
 	margin-right: 20px;
 	font-size: 2em;
-	font-family: 'Pathway Gothic One', sans-serif;
-	border: 1px solid;
+	margin-top: 5px;
+	position: relative;
 }
 
 .info {
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 1.7em;
-	width: 900px;
-	height: 200px;
-	border: 1px solid;
-	top: 2px;
+	font-size: 1.4em;
+	top: 15px;
+	left: 15px;
+	/* Almighty clear fixed, and I don't know how it works. */
+	clear: both;
+	/* Fix over */
+	position: relative;
+	width: 750px;
 }
 
 .search {
 	margin: 0 auto;
-	width: 500px;
-	height: 250px;
-	position: relative;
-	margin-top: 300px;
+	width: 200px;
+	height: 50px;
+	margin-top: 150px;
 	padding: 2px;
-	border: 1px solid;
+	position: relative;
 }
+
+/* Override default styles */
+input[type ="search"] {
+	border: 0;
+	width: 230px;
+	border-bottom: 1.5px solid;
+	border-color: #1E1B18;
+	font-size: 1.5em;
+	font-family: 'Josefin Slab', serif;
+	outline: none;
+}
+
+input [type ="submit"] {
+	border: 0;
+	margin: 0;
+	background-color: #BDBBBB;
+	float: right;
+}
+/* Default style remover: finished! */
 
