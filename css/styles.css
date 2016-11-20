@@ -5,14 +5,10 @@ body {
 /* Misc. Styling */
 
 /* override default sizes around elements. */
+
 * {
 	margin: 0;
 	padding: 0;
-}
-
-
-body { 
-	
 }
 
 a {
@@ -22,11 +18,11 @@ a {
 
 a:hover {
 	text-decoration: none;
-	cursor:pointer;
+	cursor: pointer;
 	opacity: 0.5;
 }
 
-li, .info, .search, .meetup-results {
+li, .info, .search, .meetup-results, .address {
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -73,38 +69,57 @@ li {
 	margin-left: 35px;
 }
 
+.address { 
+	border: 0;
+	border-bottom: 1px solid black;
+	font-size: 1.6em;
+	outline: 0;
+}
+
 /* Meetup Divider */
 .divider-meetup {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
+	font-size: 1.5em;
 	width: 200px;
 }
 
-/* Submit Button */
-.begin {
-	opacity: 0.5;
-	background: none;
-	cursor: pointer;
-	float: right;
+/*The div containing the dropdown-menu, the naming convention
+  isn't the best.
+*/
+.dropdown-jq {
+	width: 150px;
+	height: 25px;
+	font-size: 1em;
+	margin-left: 40px;
+	font-family: 'Josefin Slab', serif;
 }
 
 /* Override default styles */
 
 /* Search box styles/content */
-input[type ="search"] {
+input [type = "search"] {
+	width: 260px;
+	height: 2px;
 	border: 0;
-	width: 230px;
-	border-bottom: 1.5px solid;
 	border-color: #1E1B18;
 	font-size: 1.5em;
-	font-family: 'Josefin Slab', serif;
-	outline: none;
+	display: none;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 2px;
+	position: relative;
+
 }
 
 /* Default Submit Override */
-input [type ="submit"] {
-	border: 0;
-	margin: 0;
+input [type = "submit"] {
+	background: none;
+	border: none;
+	background-color: white;
+	font-size: 1em;
+	opacity: 0.5;
+	cursor: pointer;
+	float: right;
 }
-
 /* Default style remover: finished! */
 
