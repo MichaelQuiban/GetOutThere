@@ -89,6 +89,15 @@ li {
 	font-family: 'Josefin Slab', serif;
 }
 
+.begin {
+	border: none;
+	background: none;
+	border: 1px solid black;
+	font-family: 'Josefin Slab', serifs;
+	font-size: 1.2em;
+	margin-top: 2px
+	font-weight: bold;
+}
 /* Override default styles */
 
 /* Search box styles/content */
