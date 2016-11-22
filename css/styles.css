@@ -1,7 +1,7 @@
 /* Misc. Styling */
 
 body {
-	background-color: #FFF;
+	background-color: #FFF8F0;
 }
 
 /* override default sizes around elements. */
@@ -54,17 +54,19 @@ li, .info, .search, .meetup-results, .address {
 .search {
 	margin: 0 auto;
 	width: 200px;
+	margin-top: -150px; /* Terrible Styling habit */
 	height: 50px;
-	margin-top: 60px;
 	padding: 2px;
 	position: relative;
 }
 
 .address { 
 	border: 0;
-	border-bottom: 1px solid black;
+	border-bottom: 0.05em solid black;
 	font-size: 1.6em;
 	outline: 0;
+	width: 200px;
+	background-color: #FFF8F0;
 }
 
 /*The div containing the dropdown-menu, the naming convention
@@ -75,6 +77,7 @@ li, .info, .search, .meetup-results, .address {
 	height: 25px;
 	font-size: 0.9em;
 	margin-right: 15px;
+	margin-top: 5px;
 	font-family: 'Josefin Slab', serif;
 }
 
@@ -84,7 +87,7 @@ li, .info, .search, .meetup-results, .address {
 	border: 1.5px solid black;
 	font-family: 'Josefin Slab', serifs;
 	font-size: 1.2em;
-	margin-top: 5px;
+	margin-top: 3px;
 	font-weight: bold;
 	width: 90px;
 	height: 25px;
@@ -114,11 +117,8 @@ input [type = "submit"] {
 	font-size: 1em;
 }
 
-input [type = "submit"]:hover {
-	opacity: 0.5;
-}
-.dropdown-jq { 
-	
+.begin:hover {
+	opacity: 0.3335;
 }
 
 /* Search Styles Over */
@@ -135,6 +135,6 @@ input [type = "submit"]:hover {
 .meetup-results {
 	font-size: 1.6em;
 	opacity: 0.7555;
-	margin-top: 80px;
+	margin-top: 160px;
 	margin-left: 35px;
 }
