@@ -62,7 +62,7 @@ li, .info, .search, .meetup-results, .address {
 
 .address { 
 	border: 0;
-	border-bottom: 0.05em solid black;
+	border-bottom: 0.0790em solid black;
 	font-size: 1.6em;
 	outline: 0;
 	width: 200px;
@@ -137,4 +137,19 @@ input [type = "submit"] {
 	opacity: 0.7555;
 	margin-top: 160px;
 	margin-left: 35px;
+}
+
+/* Google Maps Stuff */
+
+.maps-container {
+	margin: 0 auto;
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin-top: 20px;
+}
+
+.maps-header { 
+	font-size: 1.6em;
+	opacity: 0.7555;
 }
