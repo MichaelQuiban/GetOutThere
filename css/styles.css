@@ -1,8 +1,8 @@
+/* Misc. Styling */
+
 body {
 	background-color: #FFF;
 }
-
-/* Misc. Styling */
 
 /* override default sizes around elements. */
 
@@ -10,18 +10,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-a:hover {
-	text-decoration: none;
-	cursor: pointer;
-	opacity: 0.5;
-}
-
-li, .info, .search, .meetup-results, .address {
-	font-family: 'Pathway Gothic One', sans-serif;
-}
-
-/* Misc. Styling Over */
 
 /* Navigation Content */
 li {
@@ -46,6 +34,22 @@ li {
 	width: 750px;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+li, .info, .search, .meetup-results, .address {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* Top Nav/Content Over */
 /* Search Area */
 .search {
 	margin: 0 auto;
@@ -56,26 +60,11 @@ li {
 	position: relative;
 }
 
-/* Meetup API information */
-.meetup-results {
-	font-size: 1.6em;
-	opacity: 0.7555;
-	margin-top: 80px;
-	margin-left: 35px;
-}
-
 .address { 
 	border: 0;
 	border-bottom: 1px solid black;
 	font-size: 1.6em;
 	outline: 0;
-}
-
-/* Meetup Divider */
-.divider-meetup {
-	border-top: 2px solid black;
-	font-size: 1.5em;
-	width: 200px;
 }
 
 /*The div containing the dropdown-menu, the naming convention
@@ -87,10 +76,6 @@ li {
 	font-size: 0.9em;
 	margin-right: 15px;
 	font-family: 'Josefin Slab', serif;
-}
-
-.droppy { 
-	bottom: 100%;
 }
 
 .begin {
@@ -107,9 +92,7 @@ li {
 	cursor: pointer;
 	opacity: 0.5;
 }
-/* Override default styles */
 
-/* Search box styles/content */
 input [type = "search"] {
 	width: 260px;
 	height: 2px;
@@ -138,9 +121,20 @@ input [type = "submit"]:hover {
 	
 }
 
-a {
-	text-decoration: none;
-	color: #000;
-}
-/* Default style remover: finished! */
+/* Search Styles Over */
 
+/* Meetup Styles */
+/* Meetup Divider */
+.divider-meetup {
+	border-top: 2px solid black;
+	font-size: 1.5em;
+	width: 200px;
+}
+
+/* Meetup API information */
+.meetup-results {
+	font-size: 1.6em;
+	opacity: 0.7555;
+	margin-top: 80px;
+	margin-left: 35px;
+}
