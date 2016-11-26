@@ -45,7 +45,7 @@ a:hover {
 	opacity: 0.5;
 }
 
-li, .info, .search, .meetup-results, .address, .maps-header {
+li, .info, .search, .meetup-results, .address, .maps-header, .transportation {
 	font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -54,7 +54,7 @@ li, .info, .search, .meetup-results, .address, .maps-header {
 .search {
 	margin: 0 auto;
 	width: 200px;
-	margin-top: -800px; /* Terrible Styling habit */
+	margin-top: -795px; /* Terrible Styling habit */
 	height: 50px;
 	padding: 2px;
 	position: relative;
@@ -139,6 +139,11 @@ input [type = "submit"] {
 	margin-left: 35px;
 }
 
+.meetup-content {
+	width:350px;
+	height:600px;
+}
+
 /* Google Maps Stuff */
 .maps-container {
 	margin: 0 auto;
@@ -154,18 +159,24 @@ input [type = "submit"] {
 	opacity: 0.7555;
 }
 
-#placeholder li {
-
-}
-
-.meetup-content {
-	width:350px;
-	height:600px;
-}
-
 #google-placeholder {
 	border: 1px solid;
 	margin-top: 20px;
 }
 /* Google Maps End */
 
+/*Transportation Information */
+
+.transportation {
+	float: right;
+	margin-top: -900px;
+	position: relative;
+	width: 250px;
+	height: 400px;
+	font-size: 2em;
+}
+
+.transportation-divider {
+	border-bottom: 2px solid black;
+	padding: 5px;
+}
