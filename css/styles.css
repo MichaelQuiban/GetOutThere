@@ -28,6 +28,8 @@ li {
 	clear: both;
 	/* Fix over */
 	width: 750px;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 a {
@@ -49,9 +51,10 @@ li, .info, .search, .meetup-results, .address, .maps-header, .transportation {
 /* Search Area */
 .search {
 	margin: 0 auto;
-	width: 200px;
+	width: 250px;
 	height: 50px;
 	padding: 2px;
+
 }
 
 .address { 
@@ -139,9 +142,9 @@ input [type = "submit"] {
 
 /* Google Maps Stuff */
 .maps-container {
-
-	width: 500px;
-	height: 500px;
+	width: 475px;
+	height: 475px;
+	margin-top: 75px;
 }
 
 .maps-header { 
@@ -165,9 +168,11 @@ input [type = "submit"] {
 	width: 250px;
 	height: 400px;
 	font-size: 2em;
+	margin-left: 20px;
+	margin-top: 125px;
 }
 
 .transportation-divider {
 	border-bottom: 2px solid black;
-	padding: 5px;
+	padding: 10px;
 }
