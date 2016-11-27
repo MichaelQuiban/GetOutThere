@@ -19,8 +19,39 @@
 		</ul>	
 	</nav>
 
-	<div class = info>
+	<div class = "info">
 		<p> <b>"Get Out There"</b> is a web application that was built for the late bloomers, up-and-comers, and the shy entrepreneur. Networking is <b>critical</b> when it comes to the success of your career, surround yourself with likeminded, and motivated people. Take your first step towards your success with this easy-to-use web application.</p>
+	</div>
+
+	<div class = "search">
+		<form>
+			<input class = "address" type = "search" placeholder = "Enter your address" required>
+			<select placeholder class = "dropdown-jq">
+				<option value = "Select">Event</option>
+				<option  value = "Outdoors">Outdoors</option>
+				<option  value = "Tech" type = "dropdown">Tech</option>
+				<option  value = "Family">Family</option>
+				<option  value = "Health">Health</option>
+				<option  value = "Learning">Learning</option>
+				<option  value = "Photography">Photography</option>
+				<option  value = "Food">Food</option>
+				<option  value = "Writing">Writing</option>
+				<option  value = "Movements">Movements</option>
+				<option  value = "LGBTQ">LGBTQ</option>
+				<option  value = "Film">Film</option>
+				<option  value = "Scifi">Scifi</option>
+				<option  value = "Beliefs">Beliefs</option>
+				<option  value = "Arts">Arts</option>
+				<option  value = "Books">Books</option>
+				<option  value = "Dance">Dance</option>
+				<option  value = "Pets">Pets</option>
+				<option  value = "Hobbies">Hobbies</option>
+				<option  value = "Fashion">Fashion</option>
+				<option  value = "Social">Social</option>
+				<option  value = "Career">Career</option>
+ 			</select>
+ 			<input class = "begin" type = "submit">
+		</form>
 	</div>
 
 	<div class = "meetup-results">Meetup listings. . .
@@ -35,65 +66,37 @@
 			</ul>
 		</div>
 	</div>
-	<div class = "search">
-		<form>
-				<input class = "address" type = "search" placeholder = "Enter your address" required>
-				<select placeholder class = "dropdown-jq">
-					<option value = "Select">Event</option>
-					<option  value = "Outdoors">Outdoors</option>
-					<option  value = "Tech" type = "dropdown">Tech</option>
-					<option  value = "Family">Family</option>
-					<option  value = "Health">Health</option>
-					<option  value = "Learning">Learning</option>
-					<option  value = "Photography">Photography</option>
-					<option  value = "Food">Food</option>
-					<option  value = "Writing">Writing</option>
-					<option  value = "Movements">Movements</option>
-					<option  value = "LGBTQ">LGBTQ</option>
-					<option  value = "Film">Film</option>
-					<option  value = "Scifi">Scifi</option>
-					<option  value = "Beliefs">Beliefs</option>
-					<option  value = "Arts">Arts</option>
-					<option  value = "Books">Books</option>
-					<option  value = "Dance">Dance</option>
-					<option  value = "Pets">Pets</option>
-					<option  value = "Hobbies">Hobbies</option>
-					<option  value = "Fashion">Fashion</option>
-					<option  value = "Social">Social</option>
-					<option  value = "Career">Career</option>
-	 			</select>
-	 			<input class = "begin" type = "submit">
-		</form>
-	</div>
+
 
 <!-- Google Maps go here! -->
-<div class = "maps-container">
-	<header class = "maps-header">Location of event</header>
-	<div class = "divider-meetup"></div>
-	<div class = "google"><img id = "google-placeholder" src="img/placeholder-img.png" style="width:450px;height:450px;"></div>
-</div>
-
-
-<!-- Transportation Information -->
-<div class = "transportation">
-<header> Transportation Method</header>
-	<div class = "lyft">
-		<img src = "img/l-icon.png" style ="width: 200px; height: 100px">
-		<div class = "lyft-request"></div>
+	<div class = "maps-container">
+		<header class = "maps-header">Location of event</header>
+		<div class = "divider-meetup"></div>
+		<div class = "google"><img id = "google-placeholder" src="img/placeholder-img.png" style="width:450px;height:450px;"></div>
 	</div>
-		<div class = "transportation-divider"></div>
-	<div class = "uber">
-		<img src = "img/u-icon.png" style ="width: 200px; height: 100px">
-		<div class = "uber-request"></div>
-<p>No going back now!</p>
-</div>
 
-<!-- End script goodies -->
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
+
+	<!-- Transportation Information -->
+	<div class = "transportation">
+		<header> Transportation Method</header>
+		<div class = "lyft">
+			<img src = "img/l-icon.png" style ="width: 200px; height: 100px">
+			<div class = "lyft-request"></div>
+		</div>
+			<div class = "transportation-divider"></div>
+		<div class = "uber"> 
+			<img src = "img/u-icon.png" style ="width: 200px; height: 100px">
+			<div class = "uber-request"></div>
+		</div>
+		<p>No going back now!</p>
+	</div>
+
+	<!-- End script goodies -->
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
 <!-- End -->
 </body>
 </html>
