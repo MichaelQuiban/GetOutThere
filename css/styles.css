@@ -1,178 +1,181 @@
 /* Misc. Styling */
 
 body {
-	background-color: #FFF8F0;
+    background-color: #FFF8F0;
 }
 
 /* override default sizes around elements. */
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation Content */
 li {
-	list-style: none;
-	float: left;
-	padding: 4px 12px;	
-	margin-right: 20px;
-	font-size: 2em;
-	margin-top: 5px;
+    list-style: none;
+    float: left;
+    padding: 4px 12px;  
+    margin-right: 20px;
+    font-size: 2em;
+    margin-top: 5px;
 }
 
 /* Descripion below navigation bar*/
 .info {
-	font-size: 1.4em;
-	/* Almighty clear fixed, and I don't know how it works. */
-	clear: both;
-	/* Fix over */
-	width: 750px;
-	margin-top: 20px;
-	margin-left: 20px;
+    font-size: 1.4em;
+    /* Almighty clear fixed, and I don't know how it works. */
+    clear: both;
+    /* Fix over */
+    width: 750px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 a:hover {
-	text-decoration: none;
-	cursor: pointer;
-	opacity: 0.5;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 li, .info, .search, .meetup-results, .address, .maps-header, .transportation {
-	font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 /* Top Nav/Content Over */
 /* Search Area */
 .search {
-	margin: 0 auto;
-	width: 250px;
-	height: 50px;
-	padding: 2px;
-
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    padding: 2px;
 }
 
 .address { 
-	border: 0;
-	border-bottom: 0.0790em solid black;
-	font-size: 1.6em;
-	outline: 0;
-	width: 200px;
-	background-color: #FFF8F0;
+    border: 0;
+    border-bottom: 0.0790em solid black;
+    font-size: 1.6em;
+    outline: 0;
+    width: 200px;
+    background-color: #FFF8F0;
 }
 
 /*The div containing the dropdown-menu, the naming convention
   isn't the best.
 */
 .dropdown-jq {
-	width: 100px;
-	height: 25px;
-	font-size: 0.9em;
-	margin-right: 15px;
-	margin-top: 5px;
-	font-family: 'Josefin Slab', serif;
+    width: 100px;
+    height: 25px;
+    font-size: 0.9em;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-family: 'Josefin Slab', serif;
 }
 
 .begin {
-	border: none;
-	background: none;
-	border: 1.5px solid black;
-	font-family: 'Josefin Slab', serifs;
-	font-size: 1.2em;
-	margin-top: 3px;
-	font-weight: bold;
-	width: 90px;
-	height: 25px;
-	text-align: center;
-	cursor: pointer;
-	opacity: 0.5;
+    border: none;
+    background: none;
+    border: 1.5px solid black;
+    font-family: 'Josefin Slab', serifs;
+    font-size: 1.2em;
+    margin-top: 3px;
+    font-weight: bold;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 input [type = "search"] {
-	width: 260px;
-	height: 2px;
-	border: 0;
-	border-color: #1E1B18;
-	font-size: 1.5em;
-	display: none;
-	margin: 0 auto;
-	margin-top: 15px;
-	padding: 2px;
-	position: relative;
+    width: 260px;
+    height: 2px;
+    border: 0;
+    border-color: #1E1B18;
+    font-size: 1.5em;
+    display: none;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 2px;
+    position: relative;
 }
 
 /* Default Submit Override */
 input [type = "submit"] {
-	background: none;
-	border: none;
-	background-color: white;
-	font-size: 1em;
+    background: none;
+    border: none;
+    background-color: white;
+    font-size: 1em;
 }
 
 .begin:hover {
-	opacity: 0.3335;
+    opacity: 0.3335;
 }
 
 /* Search Styles Over */
 
 /* Meetup Styles */
+
 /* Meetup Divider */
 .divider-meetup {
-	border-top: 2px solid black;
-	font-size: 1.5em;
-	width: 200px;
+    border-top: 2px solid black;
+    font-size: 1.5em;
+    width: 200px;
 }
 
 /* Meetup API information */
 .meetup-results {
-	font-size: 1.6em;
-	opacity: 0.7555;
-	margin-left: 35px;
+    font-size: 1.6em;
+    opacity: 0.7555;
+    margin-top: 20px;
+    float: left;
 }
 
 .meetup-content {
-	width:350px;
-	height:600px;
+    width:100px;
+    height:300px
 }
 
 /* Google Maps Stuff */
 .maps-container {
-	width: 475px;
-	height: 475px;
-	margin-top: 75px;
+    width: 350px;
+    height: 1px;
+    margin-bottom: 200px;
+    margin-right: 25px;
+    margin: 0 auto;
 }
 
 .maps-header { 
-	font-size: 1.6em;
-	opacity: 0.7555;
+    font-size: 1.6em;
+    opacity: 0.7555;
+    margin-top: 20px;
 }
 
 #google-placeholder {
-	border: 1px solid;
-	margin-top: 20px;
+    border: 1px solid;
+    margin-top: 20px;
 }
 /* Google Maps End */
 
-.meetup-results, .transportation, .maps-container {
-	display: inline-block;
+/*Transportation Information */
+.transportation {
+    width: 250px;
+    height: 400px;
+    font-size: 2em;
+    margin-left: 20px;
+    float: right;
 }
 
-/*Transportation Information */
-
-.transportation {
-	width: 250px;
-	height: 400px;
-	font-size: 2em;
-	margin-left: 20px;
-	margin-top: 125px;
+.transportation p {
+    font-size: 0.5em;
 }
 
 .transportation-divider {
-	border-bottom: 2px solid black;
-	padding: 10px;
+    border-bottom: 2px solid black;
+    padding: 5px;
 }
