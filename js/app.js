@@ -1,18 +1,35 @@
-$(document).ready() {
-	    function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+//Key:d357b7d536712c642322587b5f4719
 
-      function search() {
-      	
-      }
-}
+$( document ).ready(function() {
+    console.log( "ready!" );
 
+    $("#search-form").submit(function(e) {
+		e.preventDefault();
+		//$(".meetup-content li").empty();
+		//var search = $("#address").val();
+		var search = $( "#event-type option:selected" ).text();
+		console.log(search)
+		getMeetup(search);
+	});
+
+	function getMeetup(search){
+		$.ajax({
+			url:'https://api.meetup.com/find/groups',
+			type: 'GET',
+			dataType: 'jsonp',
+			data: {
+				key:'d357b7d536712c642322587b5f4719',
+				text: search,
+			},
+			success: function(data){
+				console.log(data);
+			} ,
+			error: function(error){
+				console.log(error);
+			} 
+
+		})
+	};
+
+
+});
