@@ -8,12 +8,16 @@ $( document ).ready(function() {
 		//$(".meetup-content li").empty();
 		//var search = $("#address").val();
 		var search = $( "#event-type option:selected" ).text();
-		console.log(search)
+		console.log(search + " has been searched for...");
+		console.log("Getting results...");
 		getMeetup(search);
+		console.log("Results retrieved...");
+
 	});
 
 	function getMeetup(search){
 		$.ajax({
+			//API Server
 			url:'https://api.meetup.com/find/groups',
 			type: 'GET',
 			dataType: 'jsonp',
@@ -23,13 +27,11 @@ $( document ).ready(function() {
 			},
 			success: function(data){
 				console.log(data);
-			} ,
+			},
 			error: function(error){
 				console.log(error);
 			} 
 
 		})
 	};
-
-
 });
