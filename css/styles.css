@@ -142,8 +142,10 @@ input [type = "submit"] {
     height:300px
 }
 
-p #event {
-    font-size: 5em;
+.meetup-description {
+    font-size: 0.7555em;
+    width: 390px;
+    text-align: left;
 }
 
 /* Google Maps Stuff */
