@@ -142,6 +142,10 @@ input [type = "submit"] {
     height:300px
 }
 
+p #event {
+    font-size: 5em;
+}
+
 /* Google Maps Stuff */
 .maps-container {
     width: 350px;

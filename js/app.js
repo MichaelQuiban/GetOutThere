@@ -1,21 +1,18 @@
 //Key:d357b7d536712c642322587b5f4719
 
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "Ready!" );
 
     $("#search-form").submit(function(e) {
 		e.preventDefault();
-		//$(".meetup-content li").empty();
-		//var search = $("#address").val();
 		var search = $( "#event-type option:selected" ).text();
 		console.log(search + " has been searched for...");
 		console.log("Getting results...");
 		getMeetup(search);
-		console.log("Results retrieved...");
-
+		console.log("Results retrieved");
 	});
 
-	function getMeetup(search){
+	function getMeetup(search) {
 		$.ajax({
 			//API Server
 			url:'https://api.meetup.com/find/groups',
@@ -31,7 +28,6 @@ $( document ).ready(function() {
 			error: function(error){
 				console.log(error);
 			} 
-
 		})
 	};
 });
