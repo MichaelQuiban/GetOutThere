@@ -15,10 +15,14 @@ $( document ).ready(function() {
 			},
 			success: function(data) {
 				console.log(data);
-				var results = data.items;
-				var resultsLength = data.length;
-				for (i=0; i < resultsLength; i++) {
-					console.log(resultsLength + "Hello World!");
+				for (i = 0; i < 1 ; i++) {
+					console.log(data.data[i].name);
+					//Event Names
+					$("#event-one").append("" + data.data[0].name + "");
+					$("#event-two").append("" + data.data[1].name + "");
+					$("#event-three").append("" + data.data[2].name + "");
+					$("#event-four").append("" + data.data[3].name + "");
+					$("#event-five").append("" + data.data[4].name + "");
 				}
 			},
 			error: function(error) {
