@@ -23,6 +23,14 @@ $( document ).ready(function() {
 					$("#event-three").append("" + data.data[2].name + "");
 					$("#event-four").append("" + data.data[3].name + "");
 					$("#event-five").append("" + data.data[4].name + "");
+
+					//Event Description
+					$("#description-one").append("" + data.data[0].description + "");
+					$("#description-two").append("" + data.data[1].description + "");
+					$("#description-three").append("" + data.data[2].description + "");
+					$("#description-four").append("" + data.data[3].description + "");
+					$("#description-five").append("" + data.data[4].description + "");
+
 				}
 			},
 			error: function(error) {

@@ -128,6 +128,7 @@ input [type = "submit"] {
     width: 200px;
 }
 
+
 /* Meetup API information */
 .meetup-results {
     font-size: 1.6em;
@@ -154,6 +155,11 @@ input [type = "submit"] {
     font-weight: bold;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+.meetup-description {
+    font-size: 0.8em;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Google Maps Stuff */
