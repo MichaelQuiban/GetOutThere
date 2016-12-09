@@ -1,4 +1,8 @@
 //Key:d357b7d536712c642322587b5f4719
+//<p id = "event-one"></p>
+				//<li><img id = "placeholder" src="img/placeholder-img.png" style="width:345px;height:200px;"></li>
+				//<!--Event Description-->
+				//<p id = "description-one" class ="meetup-description"></p>
 
 $( document ).ready(function() {
     console.log( "Ready!" );
@@ -15,22 +19,19 @@ $( document ).ready(function() {
 			},
 			success: function(data) {
 				console.log(data);
-				for (i = 0; i < 1 ; i++) {
-					console.log(data.data[i].name);
-					//Event Names
-					$("#event-one").append("" + data.data[0].name + "");
-					$("#event-two").append("" + data.data[1].name + "");
-					$("#event-three").append("" + data.data[2].name + "");
-					$("#event-four").append("" + data.data[3].name + "");
-					$("#event-five").append("" + data.data[4].name + "");
+				for (i = 0; i < 5 ; i++) {
+					var event = "";
+					event += "<li>";
+					event += "<p class = 'meetup-name'>" + data.data[i].name + "</p>";
+					if (data.data[i].key_photo) {
+						event += "<img src ='" + data.data[i].key_photo.highres_link +
+						 "' width='300px'>";
+					}
 
-					//Event Description
-					$("#description-one").append("" + data.data[0].description + "");
-					$("#description-two").append("" + data.data[1].description + "");
-					$("#description-three").append("" + data.data[2].description + "");
-					$("#description-four").append("" + data.data[3].description + "");
-					$("#description-five").append("" + data.data[4].description + "");
+					event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
+					event += "</li><hr>";
 
+					$("#events").append(event);
 				}
 			},
 			error: function(error) {
@@ -38,6 +39,13 @@ $( document ).ready(function() {
 			}
 		})
 	};
+
+	/* function displayMap() {
+		$.ajax ({
+			url: 'http://maps.googleapis.com/'
+		})
+	}
+	*/
 
 	//Submit request performed here...
 	  $("#search-form").submit(function(e) {
