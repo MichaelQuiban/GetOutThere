@@ -29,10 +29,10 @@ $( document ).ready(function() {
 					}
 
 					event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
-					event += "<p class = 'meetup-state'>" + "State:" + " " +data.data[i].state + "</p>";
-					event += "<p class = 'meetup-state'>" + "City:" + " " +data.data[i].city + "</p>";
-					event += "</li><hr>";
-
+					event += "<p class = 'meetup-state'>" + "State:" + " " + data.data[i].state + "</p>";
+					event += "<p class = 'meetup-state'>" + "City:" + " " + data.data[i].city + "</p>";
+					event += "<a class = 'meetup-link' href = " + "'" + data.data[i].link + "'" + ">" + "Event Link" + "</a>";
+					event += "</li><hr>"; 
 
 					$("#events").append(event);
 					$(".meetup-description").readmore();

@@ -161,6 +161,11 @@ input [type = "submit"] {
     font-weight: bold;
 }
 
+.meetup-link {
+    font-size: 1.5em;
+    font-family: 'Aref Ruqaa', serif; 
+}
+
 hr {
     width: 400px;
     height: 3px;
