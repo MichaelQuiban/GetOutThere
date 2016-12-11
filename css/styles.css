@@ -20,6 +20,9 @@ li {
     margin-top: 5px;
 }
 
+.color-area {
+    background-color: #e5dfd8;
+}
 /* Descripion below navigation bar*/
 .info {
     font-size: 1.4em;
@@ -127,13 +130,15 @@ input [type = "submit"] {
     width: 200px;
 }
 
-
 /* Meetup API information */
 .meetup-results {
     opacity: 0.7555;
-    margin-top: 20px;
     margin-left: 20px;
     float: left;
+}
+
+.meetup-title {
+    font-size: 1.5em;
 }
 
 .meetup-content {
@@ -141,13 +146,13 @@ input [type = "submit"] {
     height:300px
 }
 .meetup-name {
-    font-size: 2.5em;
+    font-size: 1.8em;
+    font-weight: bold;
     width: 400px;
 }
 
 .meetup-description {
-    font-size: 20px;
-
+    font-size: 25px;
 }
 
 hr {
@@ -181,13 +186,20 @@ hr {
 .transportation {
     width: 250px;
     height: 400px;
-    font-size: 2em;
-    margin-left: 20px;
+    font-size: 1.6em;
+    margin-left: 30px;
     float: right;
 }
 
+.transportation a {
+    vertical-align: middle;
+    line-height: 70px;  
+    font-family: 'Aref Ruqaa', serif; 
+}
+
 .transportation p {
-    font-size: 0.5em;
+    font-size: 20px;
+    font-family: 'Aref Ruqaa', serif;
 }
 
 .transportation-divider {

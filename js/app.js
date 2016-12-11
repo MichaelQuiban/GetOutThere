@@ -25,13 +25,14 @@ $( document ).ready(function() {
 					event += "<p class = 'meetup-name'>" + data.data[i].name + "</p>";
 					if (data.data[i].key_photo) {
 						event += "<img src ='" + data.data[i].key_photo.highres_link +
-						 "' width='300px'>";
+						 "' width='350px' height='250px' border='1px solid black'>";
 					}
 
 					event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
 					event += "</li><hr>";
 
 					$("#events").append(event);
+					$(".meetup-description").readmore();
 				}
 			},
 			error: function(error) {
