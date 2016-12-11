@@ -29,7 +29,10 @@ $( document ).ready(function() {
 					}
 
 					event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
+					event += "<p class = 'meetup-state'>" + "State:" + " " +data.data[i].state + "</p>";
+					event += "<p class = 'meetup-state'>" + "City:" + " " +data.data[i].city + "</p>";
 					event += "</li><hr>";
+
 
 					$("#events").append(event);
 					$(".meetup-description").readmore();
