@@ -21,7 +21,9 @@ li {
 }
 
 .color-area {
-    background-color: #e5dfd8;
+    background-color: black;
+    padding-bottom: 1px;
+    opacity: 0.5;
 }
 /* Descripion below navigation bar*/
 .info {
@@ -45,7 +47,7 @@ a:hover {
     opacity: 0.5;
 }
 
-/* Font Assign */
+/* Font Assign & Multi Styles */
 .info, .meetup-description, .description, .search, .transportation {
     font-family: 'Arvo', serif;
 }
@@ -60,6 +62,14 @@ a:hover {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.meetup-title, .maps-container {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.meetup-title, .maps-container, .transportation {
+    padding-top: 5px;
+}
 /* End */
 
 /* Top Nav/Content Over */
@@ -69,19 +79,21 @@ a:hover {
     width: 250px;
     height: 50px;
     padding: 2px;
+    padding-bottom: 20px;
 }
 
 .address { 
     border: 0;
     border-bottom: 0.0790em solid black;
-    font-size: 1.6em;
+    font-size: 1em;
     outline: 0;
     width: 200px;
     background-color: #FFF8F0;
 }
 
-/*The div containing the dropdown-menu, the naming convention
-  isn't the best.
+/*
+The div containing the dropdown-menu, the naming convention
+isn't the best.
 */
 .dropdown-jq {
     width: 100px;
@@ -103,7 +115,7 @@ a:hover {
     height: 25px;
     text-align: center;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 input [type = "search"] {
@@ -130,11 +142,9 @@ input [type = "submit"] {
 .begin:hover {
     opacity: 0.3335;
 }
-
 /* Search Styles Over */
 
 /* Meetup Styles */
-
 /* Meetup Divider */
 .divider-meetup {
     border-top: 2px solid black;
@@ -144,13 +154,8 @@ input [type = "submit"] {
 
 /* Meetup API information */
 .meetup-results {
-    opacity: 0.7555;
     margin-left: 20px;
     float: left;
-}
-
-.meetup-title {
-    font-size: 1.5em;
 }
 
 .meetup-content {
@@ -179,14 +184,14 @@ input [type = "submit"] {
 }
 
 .meetup-location {
-    margin-left: 20px;
+    margin-top: 7px;
     margin-bottom: 30px;
     background: none;
     border: 1px solid;
     color: black;
     width: 100px;
     cursor: pointer;
-    height: 30px;
+    height: 20px;
     
 }
 
@@ -209,12 +214,6 @@ hr {
     margin: 0 auto;
 }
 
-.maps-header { 
-    font-size: 1.6em;
-    opacity: 0.7555;
-    margin-top: 20px;
-}
-
 #google-placeholder {
     border: 1px solid;
     margin-top: 20px;
@@ -225,9 +224,10 @@ hr {
 .transportation {
     width: 250px;
     height: 400px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-left: 30px;
     float: right;
+    padding-right: 20px;
 }
 
 .transportation a {
