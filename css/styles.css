@@ -45,9 +45,22 @@ a:hover {
     opacity: 0.5;
 }
 
-li, .info, .search, .meetup-results, .address, .maps-header, .transportation {
-    font-family: 'Pathway Gothic One', sans-serif;
+/* Font Assign */
+.info, .meetup-description, .description, .search, .transportation {
+    font-family: 'Arvo', serif;
 }
+
+.maps-container, .transportation, .meetup-results, .address {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.social-links {
+    font-weight: 400;
+    opacity: 0.4;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* End */
 
 /* Top Nav/Content Over */
 /* Search Area */
@@ -76,14 +89,13 @@ li, .info, .search, .meetup-results, .address, .maps-header, .transportation {
     font-size: 0.9em;
     margin-right: 15px;
     margin-top: 5px;
-    font-family: 'Josefin Slab', serif;
+    
 }
 
 .begin {
     border: none;
     background: none;
     border: 1.5px solid black;
-    font-family: 'Josefin Slab', serifs;
     font-size: 1.2em;
     margin-top: 3px;
     font-weight: bold;
@@ -157,13 +169,29 @@ input [type = "submit"] {
 
 .meetup-state {
     font-size: 1.5em;
-    font-family: 'Aref Ruqaa', serif; 
+    
     font-weight: bold;
 }
 
 .meetup-link {
     font-size: 1.5em;
-    font-family: 'Aref Ruqaa', serif; 
+    
+}
+
+.meetup-location {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    background: none;
+    border: 1px solid;
+    color: black;
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    
+}
+
+.meetup-location:hover {
+    opacity: 0.8;
 }
 
 hr {
@@ -205,12 +233,12 @@ hr {
 .transportation a {
     vertical-align: middle;
     line-height: 70px;  
-    font-family: 'Aref Ruqaa', serif; 
+    
 }
 
 .transportation p {
     font-size: 20px;
-    font-family: 'Aref Ruqaa', serif;
+    
 }
 
 .transportation-divider {
