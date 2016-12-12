@@ -32,6 +32,7 @@ $( document ).ready(function() {
 					event += "<p class = 'meetup-state'>" + "State:" + " " + data.data[i].state + "</p>";
 					event += "<p class = 'meetup-state'>" + "City:" + " " + data.data[i].city + "</p>";
 					event += "<a class = 'meetup-link' href = " + "'" + data.data[i].link + "'" + ">" + "Event Link" + "</a>";
+					event += "<button type = 'button'>" + "Grab Location" + "</button>";
 					event += "</li><hr>"; 
 
 					$("#events").append(event);
