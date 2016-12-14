@@ -1,9 +1,5 @@
 //Key:d357b7d536712c642322587b5f4719
-//<p id = "event-one"></p>
-        //<li><img id = "placeholder" src="img/placeholder-img.png" style="width:345px;height:200px;"></li>
-        //<!--Event Description-->
-        //<p id = "description-one" class ="meetup-description"></p>
-
+//GKey:AIzaSyAW4mdIwEJowGz1TnIVLvjSgpdXCQW92Fw
 $(document).ready(function() {
     console.log("Ready!");
 
@@ -48,12 +44,6 @@ $(document).ready(function() {
       $(".meetup-description").readmore();  
     }  
   }
-  /* function displayMap() {
-    $.ajax ({
-      url: 'http://maps.googleapis.com/'
-    })
-  }
-  */
 
   //Submit request performed here...
   $("#search-form").submit(function(e) {
