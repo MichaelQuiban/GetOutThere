@@ -1,7 +1,6 @@
 /* Misc. Styling */
 
 body {
-    background-color: #FFF8F0;
 }
 
 /* override default sizes around elements. */
@@ -62,7 +61,7 @@ a:hover {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.meetup-title, .maps-container {
+.meetup-title, .maps-header, .transportation {
     font-size: 20px;
     opacity: 0.8;
 }
@@ -88,7 +87,7 @@ a:hover {
     font-size: 1em;
     outline: 0;
     width: 200px;
-    background-color: #FFF8F0;
+    font-color: #212121;
 }
 
 /*
@@ -100,8 +99,7 @@ isn't the best.
     height: 25px;
     font-size: 0.9em;
     margin-right: 15px;
-    margin-top: 5px;
-    
+    margin-top: 5px;  
 }
 
 .begin {
@@ -174,7 +172,6 @@ input [type = "submit"] {
 
 .meetup-state {
     font-size: 1.5em;
-    
     font-weight: bold;
 }
 
@@ -206,33 +203,33 @@ hr {
 
 /* Google Maps Stuff */
 .maps-container {
-    width: 350px;
-    height: 1px;
+    width: 450px;
     margin-bottom: 200px;
     margin-right: 25px;
     margin: 0 auto;
 }
 
-#google-placeholder {
-    border: 1px solid;
+#map {
+    border: 1.5px solid;
+    width: 450px;
+    height: 400px;
     margin-top: 20px;
 }
 /* Google Maps End */
 
 /*Transportation Information */
 .transportation {
-    width: 250px;
-    height: 400px;
+    width: 280px;
     font-size: 1.5em;
-    margin-left: 30px;
     float: right;
     padding-right: 20px;
+    margin-top: -18.5em;
+    margin-right: 20px;
 }
 
 .transportation a {
-    vertical-align: middle;
-    line-height: 70px;  
-    
+    font-size: 1.5em;
+    display: inline-block;
 }
 
 .transportation p {
@@ -242,5 +239,4 @@ hr {
 
 .transportation-divider {
     border-bottom: 2px solid black;
-    padding: 5px;
 }

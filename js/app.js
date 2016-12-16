@@ -1,8 +1,10 @@
 //Key:d357b7d536712c642322587b5f4719
 //GKey:AIzaSyAW4mdIwEJowGz1TnIVLvjSgpdXCQW92Fw
+
 $(document).ready(function() {
     console.log("Ready!");
 
+   //Make a call for this information.
   function getMeetup(search, location) {
     $.ajax({
       //API Server
@@ -24,6 +26,7 @@ $(document).ready(function() {
     })
   };
 
+  //Display that query'd results.
   function displayResults(data) {
     $("#events").empty();
     for (var i = 0; i < 5; i++) {
@@ -34,16 +37,17 @@ $(document).ready(function() {
         event += "<img src ='" + data.data[i].key_photo.highres_link +
          "' width='350px' height='250px' border='1px solid black'>";
       }
-      event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
-      event += "<p class = 'meetup-state'>" + "State:" + " " + data.data[i].state + "</p>";
-      event += "<p class = 'meetup-state'>" + "City:" + " " + data.data[i].city + "</p>";
-      event += "<a class = 'meetup-link' href = " + "'" + data.data[i].link + "'" + ">" + "Event Page" + "</a><br>";
-      event += "<button class = 'meetup-location' type = 'button'>" + "Grab Location" + "</button>";
-      event += "</li><hr>"; 
-      $("#events").append(event);
-      $(".meetup-description").readmore();  
+	      event += "<p class = 'meetup-description'>" + data.data[i].description + "</p>";
+	      event += "<p class = 'meetup-state'>" + "State:" + " " + data.data[i].state + "</p>";
+	      event += "<p class = 'meetup-state'>" + "City:" + " " + data.data[i].city + "</p>";
+	      event += "<a class = 'meetup-link' href = " + "'" + data.data[i].link + "'" + ">" + "Event Page" + "</a><br>";
+	      event += "<button class = 'meetup-location' type = 'button'>" + "Grab Location" + "</button>";
+	      event += "</li><hr>"; 
+	      $("#events").append(event);
     }  
   }
+
+   
 
   //Submit request performed here...
   $("#search-form").submit(function(e) {
@@ -58,4 +62,5 @@ $(document).ready(function() {
     getMeetup(search, location);
     console.log("Results retrieved...");
   });
+
 });
